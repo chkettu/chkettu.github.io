@@ -4,8 +4,8 @@
 function setToRed ( )
 {
   document.getElementById("colourButton").style.color = "#FF0000";
- 
-document.getElementById("myCam").src = "image.jpg";
+ var d = new Date();
+document.getElementById("myCam").src = "image.jpg?ver=" + d.getTime();
   setTimeout ( "setToBlack()", 2000 );
  
 }
