@@ -1,33 +1,11 @@
 <html>
   <head>  
-<script> 
-function setToRed ( )
-{
-  document.getElementById("colourButton").style.color = "#FF0000";
- var d = new Date();
-document.getElementById("myCam").src = "image.jpg?ver=" + d.getTime();
-  setTimeout ( "setToBlack()", 2000 );
- 
-}
- 
-function setToBlack ( )
-{
-  document.getElementById("colourButton").style.color = "#000000";
- 
-document.getElementById("myCam").src = "image.jpg"; //if I change "webcam1.jpg" to any other file name, 
-//the whole thing will work. but my webcam always save the capture to the same file. 
-  setTimeout ( "setToRed()", 2000 );
-}
- 
- 
-</script>
   </head>
   <body bgcolor="black" text="white" link="yellow" vlink="red">
     <center>
       <h1>WebCam</h1>
-      <img id="myCam">
+      <img id="myCam" src="https://www.dropbox.com/s/j0m8rheg4gv2jmz/WhatsApp%20Image%202020-12-18%20at%2022.15.30%20%282%29.jpeg">
  
-<input type="button" name="clickMe" id="colourButton" value="Click me and wait!" onclick="setToRed()"/>
     </center>
   </body>
 </html>
